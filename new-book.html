@@ -50,78 +50,88 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="row mt-100">
-        <div class="col-12 mb-10">
-          <div class="justify-content-center">
-            <h1>Nuovo Libro</h1>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <form action="" method="post">
-                <div class="mb-3">
-                  <label for="Nome Autore" class="form-label">
-                    <h4>Nome Autore</h4>
-                  </label>
-                  <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
-                    placeholder="Inserisci il nome dell'autore" aria-label=".form-control-lg example">
-                </div>
-            </div>
-            <div class="col-6">
-              <div class="mb-3">
-                <label for="Cognome Autore" class="form-label">
-                  <h4>Cognome Autore</h4>
-                </label>
-                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
-                  placeholder="Inserisci il cognome dell'autore" aria-label=".form-control-lg example">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="Titolo" class="form-label">
-                  <h4>Titolo</h4>
-                </label>
-                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
-                  placeholder="Inserisci il titolo del libro" aria-label=".form-control-lg example">
-                <div id="titolo" class="form-text">
-                  <h6>Titolo versione italiana</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <h4>Genere</h4>
-              <select class="form-select form-select-lg" aria-label="Large select example">
-                <option selected>Scegli il genere</option>
-                <option value="1">Gialli</option>
-                <option value="2">Romantici</option>
-                <option value="3">Fantasy</option>
-              </select>
-            </div>
-            <div class="col-12 col-lg-4">
-              <h4>Anno di Pubblicazione</h4>
-              <input type="date" class="form-control form-control-lg" id="">
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="mb-3">
-                <label for="isbn#" class="form-label">
-                  <h4>ISBN#</h4>
-                </label>
-                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
-                  placeholder="Inserisci il codice ISBN#" aria-label=".form-control-lg example">
-              </div>
-            </div>
-            <hr class="mt-80">
-            <div class="mb-3">
-              <label for="note" class="form-label">
-                <h4>Note</h4>
+    <div class="container pt-3">
+      <h1>Nuovo Libro</h1>
+
+      <form action="" method="post">
+        <div class="row">
+          <div class="col-6">
+            <div class="mt-3 mb-3">
+              <label for="Nome Autore" class="form-label">
+                <h4>Nome Autore</h4>
               </label>
-              <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1"
-                placeholder="Inserisci eventuali note sul libro" rows="3"></textarea>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                placeholder="Inserisci il nome dell'autore" aria-label=".form-control-lg example">
             </div>
-            </form>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="Cognome Autore" class="form-label">
+                <h4>Cognome Autore</h4>
+              </label>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                placeholder="Inserisci il cognome dell'autore" aria-label=".form-control-lg example">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="Titolo" class="form-label">
+                <h4>Titolo</h4>
+              </label>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                placeholder="Inserisci il titolo del libro" aria-label=".form-control-lg example">
+              <div id="titolo" class="form-text">
+                <h6>Titolo versione italiana</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Genere</h4>
+            <select class="form-select form-select-lg" aria-label="Large select example">
+              <option selected>Scegli il genere</option>
+              <option value="1">Gialli</option>
+              <option value="2">Romantici</option>
+              <option value="3">Fantasy</option>
+            </select>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Anno di Pubblicazione</h4>
+            <input type="number" class="form-control form-control-lg" id="">
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="mb-3">
+              <label for="isbn#" class="form-label">
+                <h4>ISBN#</h4>
+              </label>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1"
+                placeholder="Inserisci il codice ISBN#" aria-label=".form-control-lg example">
+            </div>
+          </div>
+
+        </div>
+        <hr class="mt-80">
+        <div class="mb-3">
+          <label for="note" class="form-label">
+            <h4>Note</h4>
+          </label>
+          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1"
+            placeholder="Inserisci eventuali note sul libro" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <label class="form-check-label" for="checkDefault">
+              Disponibile anche in digitale
+            </label>
           </div>
         </div>
-      </div>
+        <div>
+          <a href="./new-book.html" class="btn btn-primary">Aggiungi Libro</a>
+        </div>
+
+      </form>
+    </div>
+    </div>
     </div>
   </main>
 
